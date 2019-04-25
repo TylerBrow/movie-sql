@@ -1,0 +1,39 @@
+SELECT * FROM movies;
+
+SELECT m.title, m.id 
+FROM movies m
+LIMIT 10;
+
+SELECT m.title, m.id
+FROM movies m
+WHERE id = 485
+
+SELECT m.id
+FROM movies m
+WHERE m.title = "Made in America (1993)"  //incorrect//
+
+SELECT m.title
+FROM movies m
+ORDER BY m.title 
+LIMIT 10
+
+SELECT *
+FROM movies m
+WHERE m.title LIKE '%2002%'
+
+SELECT m.title
+FROM movies m
+WHERE m.title LIKE '%Godfather%'
+
+SELECT m.title, m.genres
+FROM movies m
+WHERE m.genres LIKE 'Comedy%'
+
+SELECT m.title, m.genres
+FROM movies m
+WHERE m.genres LIKE 'COMEDY%' and m.title LIKE '%2000%'
+
+SELECT m.title, m.genres
+FROM movies m
+WHERE m.genres LIKE 'COMEDY%' and m.title LIKE 'DEA%'
+
